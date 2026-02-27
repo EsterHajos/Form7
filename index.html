@@ -4,8 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form7</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     
+  <h1 class="header">Apply for internship here</h1>
+      <form action="/">
+        <div class="application">
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" placeholder="Ex: Emma" required />
+        </div>
+
+        <div class="application">
+          <label for="lastname">Last Name:</label>
+          <input type="lastname" id="lastname" placeholder="Ex: Hansson" required />
+        </div>
+
+        <div class="application">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" pattern="emma.hansson@gmail.com" placeholder="Ex: emma.hansson@gmail.com" required/>
+        </div>
+
+        <div class="application">
+          <label for="phonenumber">Phonenumber:</label>
+          <input type="phonenumber" id="phonenumber" name="phonenumber" pattern="07" placeholder="Ex: 0706472485" required/>
+        </div>
+
+
+        <div class="application">
+          <label for="application">Application for intership department:</label>
+          <select name="application" id="application" required>
+            <option value="application1">HR</option>
+            <option value="application2">IT</option>
+            <option value="application3">Sales</option>
+            <option value="application4">Media</option>
+            <option value="application5">Developer</option>
+            <option value="application6">Front Desk</option>
+          </select>
+        </div>
+
+        <div class="application">
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="20"
+            placeholder="Any additional information" ></textarea>
+        </div>
+
+        <div class="contact-btn">
+          <button class="btn green" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

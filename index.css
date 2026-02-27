@@ -1,0 +1,26 @@
+.application {
+
+font-family: "Funnel Sans", sans-serif;
+background-color: bisque;
+font-size: 25px;
+color: black;
+max-width: 1200px;
+justify-content: center;
+
+
+}
+
+.header {
+
+font-family: "Funnel Sans", sans-serif;
+background-color: bisque;
+font-size: 50px;
+font-style: bold;
+color: black;
+max-width: 1200px;
+justify-content: center;
+
+
+
+
+}
