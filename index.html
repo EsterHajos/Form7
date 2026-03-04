@@ -9,58 +9,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-
 </head>
+
+
+
 <body>
-    
-  <h1 class="header">Apply for internship here</h1>
+  <section class="container">
+  <h1 class="header">APPLY FOR INTERNSHIP HERE</h1>
       <form action="/">
         <div class="application">
-          <label for="firstname">First Name:</label>
-          <input type="text" id="firstname" placeholder="Ex: Emma" required />
+          <label for="firstname" class="label">First Name:</label>
+          <input type="firstname" id="firstname" required class="input"/> 
+        </div>
+       
+    
+
+        <div class="application">
+          <label for="lastname" class="label">Last Name:</label>
+          <input type="lastname" id="lastname" required class="input"/>
+        </div>
+
+       
+
+        <div class="application">
+          <label for="email" class="label">Email:</label>
+          <input type="email" id="email" name="email" required class="input"/>
         </div>
 
         <div class="application">
-          <label for="lastname">Last Name:</label>
-          <input type="lastname" id="lastname" placeholder="Ex: Hansson" required />
-        </div>
-
-        <div class="application">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" pattern="emma.hansson@gmail.com" placeholder="Ex: emma.hansson@gmail.com" required/>
-        </div>
-
-        <div class="application">
-          <label for="phonenumber">Phonenumber:</label>
-          <input type="phonenumber" id="phonenumber" name="phonenumber" pattern="07" placeholder="Ex: 0706472485" required/>
+          <label for="phonenumber" class="label">Phonenumber:</label>
+          <input type="tel" id="phonenumber" name="phonenumber" required class="input"/>
         </div>
 
 
         <div class="application">
-          <label for="application">Application for intership department:</label>
-          <select name="application" id="application" required>
+          <label for="application" class="label">Department:</label>
+          <select name="application" id="application" required class="input">
             <option value="application1">HR</option>
             <option value="application2">IT</option>
             <option value="application3">Sales</option>
-            <option value="application4">Media</option>
-            <option value="application5">Developer</option>
-            <option value="application6">Front Desk</option>
+            <option value="application4">Marketing</option>
+            <option value="application5">Engineering</option>
+            <option value="application6">Facilities & Administration</option>
           </select>
         </div>
+       
 
         <div class="application">
-          <label for="message">Message:</label>
+          <label for="message" class="label">Message:</label>
           <textarea
             name="message"
             id="message"
-            rows="20"
-            placeholder="Any additional information" ></textarea>
+            rows="1-20"
+            placeholder="Additional optional information" class="message"></textarea>
         </div>
 
-        <div class="contact-btn">
-          <button class="btn green" type="submit">Submit</button>
+        <div>
+          <button class="button" type="submit">Submit</button>
         </div>
       </form>
+
+      </section>  
     </main>
     
 
